@@ -9,9 +9,18 @@ export default function Dictionary() {
     setKeyword(event.target.value);
   }
 
+  function getResponse(response) {
+    console.log(response.data);
+    alert(
+      `The meaning for "${keyword}" is: ${response.data.meanings[0].definition}`
+    );
+  }
+
   function search(event) {
     event.preventDefault();
-    alert(`Searching for ${keyword}`);
+    let apiKey = "o599f3bbe3f722tbacc3ebf3032624a0";
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
+    axios.get(apiUrl).then(getResponse);
   }
 
   return (
