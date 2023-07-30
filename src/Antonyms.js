@@ -7,7 +7,15 @@ export default function Antonyms(props) {
         Antonym(s):
         <ul>
           {props.antonyms.map(function (antonym, index) {
-            return <li key={index}>{antonym}</li>;
+            if (index < 5) {
+              return (
+                <div key={antonym}>
+                  <li>{antonym}</li>
+                </div>
+              );
+            } else {
+              return null;
+            }
           })}
         </ul>
       </div>
