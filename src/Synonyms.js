@@ -7,7 +7,7 @@ export default function Synonyms(props) {
         Synonym(s):
         <ul>
           {props.synonyms.map(function (synonym, index) {
-            if (index < 5) {
+            if (index < 10) {
               return (
                 <div key={synonym}>
                   <li>{synonym}</li>
