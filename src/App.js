@@ -7,7 +7,24 @@ function App() {
       <div className="container">
         <header className="App-header">Dictionary</header>
         <Dictionary />
-        <footer>Coded by Tali Berlin</footer>
+        <footer>
+          This website was coded by{" "}
+          <a
+            href="https://www.linkedin.com/in/taliberlin/"
+            title="View Tali Berlin's LinkedIn profile"
+          >
+            {" "}
+            Tali Berlin
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/taliberlin/dictionary"
+            title="View source-code on GitHub"
+          >
+            {" "}
+            open-sourced!
+          </a>
+        </footer>
       </div>
     </div>
   );
