@@ -18,3 +18,10 @@
   margin-top: 40px;
   color: var(--fourth-color);
 }
+.App a {
+  color: var(--third-color);
+  text-decoration: none;
+}
+.App a:hover {
+  color: var(--primary-color);
+}
