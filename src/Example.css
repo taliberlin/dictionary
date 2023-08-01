@@ -1,0 +1,5 @@
+.Example {
+  color: var(--fourth-color);
+  margin-bottom: 0;
+  font-weight: 300;
+}

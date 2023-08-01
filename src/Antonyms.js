@@ -1,23 +1,20 @@
 import React from "react";
+import "./Antonyms.css";
 
 export default function Antonyms(props) {
   if (props.antonyms) {
     return (
-      <div>
-        Antonym(s):
-        <ul>
+      <div className="Antonyms">
+        <span>Opposite:</span>
+        <div>
           {props.antonyms.map(function (antonym, index) {
             if (index < 10) {
-              return (
-                <div key={antonym}>
-                  <li>{antonym}</li>
-                </div>
-              );
+              return <div key={antonym}> {antonym}</div>;
             } else {
               return null;
             }
           })}
-        </ul>
+        </div>
       </div>
     );
   } else {

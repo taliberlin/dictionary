@@ -24,15 +24,15 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
+      <h4>Which word would you like to look up?</h4>
       <form onSubmit={search}>
         <input
           type="search"
           autoFocus={true}
-          placeholder="Enter city..."
+          placeholder="Search word..."
           onChange={handleKeywordChange}
           className="search-bar"
         />
-        <input type="submit" value="Search" />
       </form>
       <Results results={results} />
     </div>
