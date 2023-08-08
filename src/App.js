@@ -8,7 +8,7 @@ function App() {
         <header>Dictionary</header>
         <Dictionary />
         <footer>
-          This website was coded by{" "}
+          🤟🏼 This website was coded by{" "}
           <a
             href="https://www.linkedin.com/in/taliberlin/"
             title="View Tali Berlin's LinkedIn profile"
