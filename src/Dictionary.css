@@ -16,6 +16,21 @@
   color: var(--third-color);
   text-align: center;
 }
-.Dictionary h3 {
-  color: var(--fourth-color);
+
+@media (min-width: 651px) and (max-width: 850px) {
+  .Dictionary form {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 650px) {
+  .Dictionary h4 {
+    font-size: 15px;
+    padding-top: 0;
+  }
+  .Dictionary form {
+    margin-bottom: 30px;
+  }
+  .Dictionary input {
+    width: 70%;
+  }
 }

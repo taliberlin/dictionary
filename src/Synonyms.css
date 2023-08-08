@@ -6,3 +6,9 @@
   margin-right: 15px;
   margin-top: 3px;
 }
+
+@media (max-width: 650px) {
+  .Synonyms {
+    font-size: 12px;
+  }
+}

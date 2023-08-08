@@ -13,4 +13,25 @@
 .Results .keyword {
   font-size: 35px;
   margin-top: 20px;
+  margin-bottom: 0;
+}
+.Results .phonetic {
+  font-size: 20px;
+}
+
+@media (min-width: 650px) and (max-width: 850px) {
+  .Results section {
+    width: 70%;
+  }
+}
+@media (max-width: 650px) {
+  .Results section {
+    width: 82%;
+    padding-right: 25px;
+    padding-left: 35px;
+    margin-top: 20px;
+  }
+  .Results .keyword {
+    font-size: 30px;
+  }
 }
