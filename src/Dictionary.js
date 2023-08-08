@@ -17,20 +17,18 @@ export default function Dictionary() {
   }
 
   function getPhotoResponse(response) {
-    console.log(response);
+    setPhotos(response.data.photos);
   }
 
   function search(event) {
     event.preventDefault();
+
     let apiKey = "o599f3bbe3f722tbacc3ebf3032624a0";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(getResponse);
 
-    let photoApiKey =
-      "bxPMt0l6zNnwvWYS8hxcMjmhy14OKhHS4qfoGeoEgX7yIpTwLYpkGCOg";
-    let photoApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
-    let headers = { Authorization: `Bearer ${photoApiKey}` };
-    axios.get(photoApiUrl, { headers: headers }).then(getPhotoResponse);
+    let photoApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${apiKey}`;
+    axios.get(photoApiUrl).then(getPhotoResponse);
   }
 
   return (
@@ -45,7 +43,7 @@ export default function Dictionary() {
           className="search-bar"
         />
       </form>
-      <Results results={results} />
+      <Results results={results} photos={photos} />
     </div>
   );
 }
