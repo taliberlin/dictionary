@@ -1,14 +1,10 @@
 .Antonyms {
-  margin-top: 15px;
-  color: rgba(0, 0, 0, 0.852);
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.703);
 }
-.Antonyms div {
-  display: flex;
-  margin-right: 15px;
-}
-
 @media (max-width: 650px) {
   .Antonyms {
-    font-size: 12px;
+    font-size: 11px;
+    margin-top: 10px;
   }
 }

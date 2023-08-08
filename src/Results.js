@@ -13,7 +13,7 @@ export default function Results(props) {
         </section>
         <div>
           {props.results.meanings.map(function (meaning, index) {
-            if (index < 7) {
+            if (index < 10) {
               return (
                 <section key={meaning.definition}>
                   <Meaning meaning={meaning} />

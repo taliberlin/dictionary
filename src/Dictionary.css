@@ -15,22 +15,29 @@
 .Dictionary h4 {
   color: var(--third-color);
   text-align: center;
+  font-size: 21px;
 }
 
 @media (min-width: 651px) and (max-width: 850px) {
+  .Dictionary h4 {
+    margin-bottom: 18px;
+  }
   .Dictionary form {
     margin-bottom: 50px;
+  }
+  .Dictionary input {
+    width: 50%;
   }
 }
 @media (max-width: 650px) {
   .Dictionary h4 {
-    font-size: 15px;
-    padding-top: 0;
+    font-size: 14px;
+    margin-bottom: 14px;
   }
   .Dictionary form {
     margin-bottom: 30px;
   }
   .Dictionary input {
-    width: 70%;
+    width: 68%;
   }
 }
