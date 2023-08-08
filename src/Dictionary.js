@@ -22,13 +22,15 @@ export default function Dictionary() {
 
   function search(event) {
     event.preventDefault();
-
-    let apiKey = "o599f3bbe3f722tbacc3ebf3032624a0";
-    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
-    axios.get(apiUrl).then(getResponse);
-
-    let photoApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${apiKey}`;
-    axios.get(photoApiUrl).then(getPhotoResponse);
+    if (keyword.trim() === "") {
+      alert("Please enter a word");
+    } else {
+      let apiKey = "o599f3bbe3f722tbacc3ebf3032624a0";
+      let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
+      let photoApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${apiKey}`;
+      axios.get(apiUrl).then(getResponse);
+      axios.get(photoApiUrl).then(getPhotoResponse);
+    }
   }
 
   return (
