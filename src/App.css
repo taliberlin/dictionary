@@ -1,5 +1,5 @@
 .App header {
-  width: 30%;
+  width: 32%;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -25,14 +25,15 @@
 .App a:hover {
   color: var(--primary-color);
 }
-@media (min-width: 650px) and (max-width: 850px) {
+
+@media (max-width: 950px) {
   .App header {
     font-size: 30px;
   }
 }
 @media (max-width: 650px) {
   .App header {
-    width: 50%;
+    width: 40%;
     font-size: 22px;
     margin-top: 10px;
     padding: 17px 0;
@@ -40,5 +41,12 @@
   .App footer {
     font-size: 10px;
     margin-top: 25px;
+  }
+}
+@media (max-width: 390px) {
+  .App header {
+    width: 50%;
+    font-size: 17px;
+    padding: 15px 0;
   }
 }

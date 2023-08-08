@@ -11,3 +11,14 @@ body {
   background-color: var(--secondary-color);
   font-family: var(--font);
 }
+
+@media (max-width: 650px) {
+  body {
+    padding: 17px;
+  }
+}
+@media (max-width: 300px) {
+  body {
+    padding: 7px;
+  }
+}
